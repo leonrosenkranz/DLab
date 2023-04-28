@@ -6,7 +6,7 @@ The solution for sustainable innovation management 🌳
 
 Run webserver on localhost > Terminal (cd to folder _react-app_) > **npm run dev**
 
-react-webapp we be hosted on: http://localhost:5173/
+react-webapp will be hosted on: http://localhost:5173/
 
 Leon Rosenkranz :computer:
 
