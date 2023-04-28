@@ -13,7 +13,6 @@ Opening the whole project in VSCode: Terminal > **code .** // opening directory 
 
 Coding and Developing workflow with Visual Studio Code and working with GitFlows in teams > Terminal commands
 -
-
 1) Download the repository                 | > **git clone <RepositoryURL>** (*first time)
 2) Get the latest changes from the server  | > **git pull**
 3) Stage changes locally                   | > **git add <filename>**
@@ -24,7 +23,6 @@ Coding and Developing workflow with Visual Studio Code and working with GitFlows
 
 Working with branches (your own development line):
 -
-  
 1) Add new branch                           | > **git branch**
 2) List all branches                        | > **git branch <branch>**
 3) Change between branches                  | > **git checkout <branch>**
