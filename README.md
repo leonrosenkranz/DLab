@@ -32,7 +32,7 @@ Coding and Developing with Visual Studio Code
 |4) Delete a branch                          | > **git branch -d**|
 |5) Rename a branch                          | > **git branch -m <branch>**|
  
-Alternative: Work with _GitHub Desktop, TotoiseGit or VSCode GitHub Add-In_
+> Alternative: Work with _GitHub Desktop, TotoiseGit or VSCode GitHub Add-In_
   
 Markdown for readme: https://gist.github.com/cuonggt/9b7d08a597b167299f0d
 
