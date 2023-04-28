@@ -14,17 +14,17 @@ Coding and Developing with Visual Studio Code
 
 > Opening whole project in VSCode: Terminal > **code .** // opening directory in VS code
 
-|General GitFlows / commands: | > Terminal commands |
+|General GitFlows for working in team | > Terminal commands |
 |-|-|
 |1) Download the repository                 | > **git clone <RepositoryURL>** (*first time)|
 |2) Get the latest changes from the server  | > **git pull**|
 |3) Stage changes locally                   | > **git add <filename>**|
-|4) Create a commit with a description      | > **git commit -m** <Commit Description>|
+|4) Create a commit with a description      | > **git commit -m** _Commit Description_|
 |5) Publish changes to the server           | > **git push**|
 
   (* https://github.com/leonrosenkranz/DLab)
 
-|Working with branches (your own development line): | > Terminal commands|
+|Working with branches (your own development line): | > Terminal commands |
 |-|-|
 |1) Add new branch                           | > **git branch**|
 |2) List all branches                        | > **git branch <branch>**|
