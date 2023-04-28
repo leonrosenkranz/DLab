@@ -1,18 +1,18 @@
 # DLab
 SUSTAINChallenge - The solution for sustainable innovation management
 
-![image](https://user-images.githubusercontent.com/103988994/235097983-954d7de4-335a-4108-abbc-6d0cfa5855e4.png)
-
-Opening the whole project in VSCode: Terminal > **code .** // opening directory in VS code
-
 Run webserver on localhost > Terminal > **npm run dev**
 
 react-webapp we be hosted on: http://localhost:5173/
 
+![image](https://user-images.githubusercontent.com/103988994/235097983-954d7de4-335a-4108-abbc-6d0cfa5855e4.png)
 
-// Leon Rosenkranz
+Leon Rosenkranz
+
 
 Further information:
+
+Opening the whole project in VSCode: Terminal > **code .** // opening directory in VS code
 
 Coding and Developing workflow with Visual Studio Code and working with GitFlows in teams > Terminal commands
 
