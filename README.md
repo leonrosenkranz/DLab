@@ -6,3 +6,5 @@ SUSTAINChallenge - The solution for sustainable innovation management
 Run webserver on localhost: Terminal > **npm run dev**
 
 react-webapp we be hosted on: http://localhost:5173/
+
+// Leon Rosenkranz
