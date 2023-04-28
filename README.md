@@ -31,6 +31,9 @@ Coding and Developing with Visual Studio Code
 |3) Change between branches                  | > **git checkout _(branchname)_**|
 |4) Delete a branch                          | > **git branch -d _(branchname)_**|
 |5) Rename a branch                          | > **git branch -m _(branchname)_**|
+|6) Pull Changes from branch                 | > **git fetch**|
+|7) Pull Changes from main                   | > **git merge main**|
+|8) Push Changes in main                     | > **git rebase main**|
  
 > Alternative: Work with _GitHub Desktop, TotoiseGit or VSCode GitHub Add-In_
 > 
