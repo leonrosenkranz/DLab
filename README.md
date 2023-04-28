@@ -18,7 +18,7 @@ Coding and Developing with Visual Studio Code
 |-|-|
 |1) Download the repository                 | > **git clone** _RepositoryURL_ (*first time)|
 |2) Get the latest changes from the server  | > **git pull**|
-|3) Stage changes locally                   | > **git add _filename_**|
+|3) Stage changes locally                   | > **git add** _filename_|
 |4) Create a commit with a description      | > **git commit -m** _Commit Description_|
 |5) Publish changes to the server           | > **git push**|
 
@@ -30,6 +30,6 @@ Coding and Developing with Visual Studio Code
 |2) List all branches                        | > **git branch _branch_**|
 |3) Change between branches                  | > **git checkout _branch_**|
 |4) Delete a branch                          | > **git branch -d**|
-|5) Rename a branch                          | > **git branch -m _<branch>_**|
+|5) Rename a branch                          | > **git branch -m _branch_**|
  
 > Alternative: Work with _GitHub Desktop, TotoiseGit or VSCode GitHub Add-In_
