@@ -33,3 +33,4 @@ Coding and Developing with Visual Studio Code
 |5) Rename a branch                          | > **git branch -m _(branch)_**|
  
 > Alternative: Work with _GitHub Desktop, TotoiseGit or VSCode GitHub Add-In_
+> 
