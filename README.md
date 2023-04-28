@@ -36,8 +36,8 @@ Markdown for readme: https://gist.github.com/cuonggt/9b7d08a597b167299f0d
 
 Table of contents:
 
-1 | 2
--
-3 | 4
+|1 | 2|
+|-|-|
+|3 | 4|
 
   
