@@ -14,7 +14,7 @@ Coding and Developing with Visual Studio Code
 
 > Opening whole project in VSCode: Terminal > **code .** // opening directory in VS code
 
-|General GitFlows for working in team | > Terminal commands |
+|General GitFlows (working in team): |> Terminal commands |
 |-|-|
 |1) Download the repository                 | > **git clone <RepositoryURL>** (*first time)|
 |2) Get the latest changes from the server  | > **git pull**|
@@ -24,7 +24,7 @@ Coding and Developing with Visual Studio Code
 
   (* https://github.com/leonrosenkranz/DLab)
 
-|Working with branches (your own development line): | > Terminal commands |
+|Working with branches (your own development line): |> Terminal commands |
 |-|-|
 |1) Add new branch                           | > **git branch**|
 |2) List all branches                        | > **git branch <branch>**|
