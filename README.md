@@ -17,7 +17,7 @@ Opening the whole project in VSCode: Terminal > **code .** // opening directory 
 |1) Download the repository                 | > **git clone <RepositoryURL>** (*first time)|
 |2) Get the latest changes from the server  | > **git pull**|
 |3) Stage changes locally                   | > **git add <filename>**|
-|4) Create a commit with a description      | > **git commit -m “<Commit Description>”**|
+|4) Create a commit with a description      | > **git commit -m** “<Commit Description>”|
 |5) Publish changes to the server           | > **git push**|
 
   (* https://github.com/leonrosenkranz/DLab)
