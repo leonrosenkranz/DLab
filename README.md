@@ -16,10 +16,10 @@ Coding and Developing with Visual Studio Code
 
 |General GitFlows (working in team): |> Terminal commands |
 |-|-|
-|1) Download the repository once            | > **git clone** _(RepositoryURL)_ (*)|
+|1) Download the repository once            | > **git clone _(RepositoryURL)_** (*)|
 |2) Get the latest changes from the server  | > **git pull**|
-|3) Stage changes locally                   | > **git add** _(filename)_|
-|4) Create a commit with a description      | > **git commit -m** _(description)_|
+|3) Stage changes locally                   | > **git add _(filename)_**|
+|4) Create a commit with a description      | > **git commit -m _(description)_**|
 |5) Publish changes to the server           | > **git push**|
 
   (* https://github.com/leonrosenkranz/DLab)
