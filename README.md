@@ -26,8 +26,8 @@ Coding and Developing with Visual Studio Code
 
 |Working with branches (your own development line): |> Terminal commands |
 |-|-|
-|1) Add new branch                           | > **git branch**|
-|2) List all branches                        | > **git branch _(branch)_**|
+|1) List all branches and see current        | > **git branch**|
+|2) Add new branch                           | > **git branch _(branch)_**|
 |3) Change between branches                  | > **git checkout _(branch)_**|
 |4) Delete a branch                          | > **git branch -d**|
 |5) Rename a branch                          | > **git branch -m _(branch)_**|
