@@ -1,4 +1,4 @@
-<H1>**SUSTAINChallenge**  - The solution for sustainable innovation management 🌳</H1>
+<H2>SUSTAINChallenge</H2>  - The solution for sustainable innovation management 🌳
 
 Run webserver on localhost > Terminal (cd to folder _react-app_) > **npm run dev**
 
