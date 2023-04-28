@@ -33,3 +33,9 @@ Working with branches (your own development line): | > Terminal commands
 Alternative: Work with _GitHub Desktop, TotoiseGit or VSCode Add-In_
   
 Markdown for readme: https://gist.github.com/cuonggt/9b7d08a597b167299f0d
+
+Table of contents:
+
+1 | 2
+-
+3 | 4
