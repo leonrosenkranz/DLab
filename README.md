@@ -16,9 +16,9 @@ Coding and Developing with Visual Studio Code
 
 |General GitFlows (working in team): |> Terminal commands |
 |-|-|
-|1) Download the repository                 | > **git clone <RepositoryURL>** (*first time)|
+|1) Download the repository                 | > **git clone** _RepositoryURL_ (*first time)|
 |2) Get the latest changes from the server  | > **git pull**|
-|3) Stage changes locally                   | > **git add <filename>**|
+|3) Stage changes locally                   | > **git add _filename_**|
 |4) Create a commit with a description      | > **git commit -m** _Commit Description_|
 |5) Publish changes to the server           | > **git push**|
 
@@ -27,9 +27,9 @@ Coding and Developing with Visual Studio Code
 |Working with branches (your own development line): |> Terminal commands |
 |-|-|
 |1) Add new branch                           | > **git branch**|
-|2) List all branches                        | > **git branch <branch>**|
-|3) Change between branches                  | > **git checkout <branch>**|
+|2) List all branches                        | > **git branch _branch_**|
+|3) Change between branches                  | > **git checkout _branch_**|
 |4) Delete a branch                          | > **git branch -d**|
-|5) Rename a branch                          | > **git branch -m <branch>**|
+|5) Rename a branch                          | > **git branch -m _<branch>_**|
  
 > Alternative: Work with _GitHub Desktop, TotoiseGit or VSCode GitHub Add-In_
