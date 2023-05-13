@@ -1,5 +1,6 @@
 import Message from './message';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import GoalsPage from './Pages/Goals';
 
 function App() {
   return (<div>
@@ -30,7 +31,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/goals" element={<Goals />} />
+          <Route path="/goals" element={<GoalsPage/>} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/education" element={<Education />} />
           <Route path="/scoreboard" element={<Scoreboard />} />
