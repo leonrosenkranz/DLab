@@ -1,0 +1,7 @@
+
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/SairaCondensedMedium.ttf"); font-family : "Saira Condensed"; font-weight : 500;  }
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/SairaCondensedSemiBold.ttf"); font-family : "Saira Condensed"; font-weight : 600;  }
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/SairaCondensedBold.ttf"); font-family : "Saira Condensed"; font-weight : 700;  }
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/SairaCondensedLight.ttf"); font-family : "Saira Condensed"; font-weight : 300;  }
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/SairaCondensedRegular.ttf"); font-family : "Saira Condensed"; font-weight : 400;  }
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/RobotoRegular.ttf"); font-family : "Roboto"; font-weight : 400;  }
