@@ -19,7 +19,7 @@ return (
               className="h-[30px] mx-auto w-[30px]"
               src="images/img_home.svg"
               alt="home"
-              onClick={() => navigate("")}
+              onClick={() => navigate("/")}
             />
             <Text
               className="capitalize mt-[-4.74px] mx-auto text-[11px] text-center text-white-A700 z-[1]"
