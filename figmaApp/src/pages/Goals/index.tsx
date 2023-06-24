@@ -2,7 +2,7 @@ import React from "react";
 
 import { useNavigate } from "react-router-dom";
 
-import { Button, List, Text } from "components";
+import { Button, List, Text, NavBar} from "components";
 
 const GoalsPage: React.FC = () => {
   const navigate = useNavigate();

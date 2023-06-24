@@ -2,7 +2,7 @@ import React from "react";
 
 import { useNavigate } from "react-router-dom";
 
-import { Button, Img, Text, NavBar } from "components";
+import { Button, Img, Text, NavBar, Box } from "components";
 import Header from "components/Header";
 
 const HomescreenPage: React.FC = () => {

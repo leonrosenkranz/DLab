@@ -1,46 +1,56 @@
 import Message from './message';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import GoalsPage from './Pages/Goals';
-
+import HomePage from './Pages/Home';
+import {Sidebar} from 'flowbite-react';
+import { Button } from 'flowbite-react';
+import { FaHome} from "react-icons/fa"
+import { GiStairsGoal } from"react-icons/Gi"
+import {AiOutlineFundProjectionScreen} from"react-icons/Ai"
+import { GrScorecard } from "react-icons/Gr"
+import { MdSchool } from "react-icons/md"
 function App() {
   return (<div>
-   <BrowserRouter>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/goals">Goals</Link>
-            </li>
-            <li>
-              <Link to="/projects">Projects</Link>
-            </li>
-            <li>
-              <Link to="/education">Education</Link>
-            </li>
-            <li>
-              <Link to="/scoreboard">Scoreboard</Link>
-            </li>
-            <li>
-              <Link to="/further-information">Further Information</Link>
-            </li>
-          </ul>
-        </nav>
-
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/goals" element={<GoalsPage/>} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/education" element={<Education />} />
-          <Route path="/scoreboard" element={<Scoreboard />} />
-          <Route path="/further-information" element={<FurtherInformation />} />
-        </Routes>
-      </div>
-    </BrowserRouter>
-  <div><Message/></div>
-</div>
+    <Button>FlowBite</Button>
+    <Sidebar>
+      <Sidebar.Items>
+      <Sidebar.ItemGroup>
+        <Sidebar.Item
+        icon={FaHome}>
+          <p>
+            Home
+          </p>
+        </Sidebar.Item>
+        <Sidebar.Item
+        icon={GiStairsGoal}>
+          <p>
+            Ziele
+          </p>
+        </Sidebar.Item>
+        <Sidebar.Item
+        icon={AiOutlineFundProjectionScreen}>
+          <p>
+            Projekte
+          </p>
+        </Sidebar.Item>
+        <Sidebar.Item
+        icon={GrScorecard}>
+          <p>
+            Scoreboard
+          </p>
+        </Sidebar.Item>
+        <Sidebar.Item
+        icon={MdSchool}
+        >
+          <p>
+            Bildung
+          </p>
+        </Sidebar.Item>
+      </Sidebar.ItemGroup>
+     </Sidebar.Items>
+    </Sidebar>
+    <HomePage></HomePage>
+     </div>
   )
 }
 
