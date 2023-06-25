@@ -10,7 +10,8 @@ function NeueIdeePage() {
     const [idee, setIdee] = useState({descript: "",
                                       Author: "",
                                       Dept: "",
-                                      Goal: ""
+                                      Goal: "",
+                                      titel: ""
 
 })
     return (  

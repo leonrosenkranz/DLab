@@ -23,12 +23,14 @@ let ideas = [
     Author: "Sam",
     Dept: "IT",
     Goal: "Nutzung nachhaltiger Verkehrsmittel",
+    titel: "Zug Nutzung im Inland",
   },
   {
     descript: "Fuck this ",
     Author: "Sam",
     Dept: "IT",
     Goal: "Nutzung nachhaltiger Verkehrsmittel",
+    titel: " Keine Abrechnungen ausdrucken ",
   },
 ];
 

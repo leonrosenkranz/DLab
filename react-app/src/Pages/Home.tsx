@@ -1,7 +1,27 @@
 import {Card, Table, Progress, Button, ListGroup, Alert} from "flowbite-react"
+import { useEffect, useState } from "react"
 import {BiCommentDetail} from "react-icons/Bi"
 import { AiFillEdit, AiFillDelete } from "react-icons/ai"
 function HomePage() {
+    const [ideaList, setIdeaList] = useState<{descript: string,
+    Author: string,
+    Dept: string,
+    Goal: string,
+    titel: string}[]>([])
+
+    useEffect(() => {
+        const fetchData = async () => {
+          try {
+            const response = await fetch('http://localhost:3000/ideas');
+            const data = await response.json();
+            setIdeaList(data);
+          } catch (error) {
+            console.error('Error fetching object list:', error);
+          }
+        };
+      
+        fetchData();
+      }, []);
     return (
         <div>
             <div className="bg-gray-300 bg-opacity-50 rounded-lg text-center p-4 m-4"> Ritto & Fuch x SustainChallenge</div>
@@ -70,22 +90,19 @@ function HomePage() {
       </h5>
       <Table>
         <Table.Body>
-            <Table.Row>
-                <Table.Cell>
-                    Zug Nutzung im Inland
-                </Table.Cell>
-                <Table.Cell>
-                    <BiCommentDetail/>
-                </Table.Cell>
-            </Table.Row>
-            <Table.Row>
-                <Table.Cell>
-                    Keine Abrechnungen ausdrucken 
-                </Table.Cell>
-                <Table.Cell>
-                    <BiCommentDetail/>
-                </Table.Cell>
-            </Table.Row>
+            {ideaList.map( (idea) => (
+               <Table.Row>
+               <Table.Cell>
+                {idea.titel}
+               </Table.Cell>
+               <Table.Cell>
+                   <BiCommentDetail/>
+               </Table.Cell>
+           </Table.Row> 
+
+            ))
+            }
+           
 
         </Table.Body>
       </Table>
