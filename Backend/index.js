@@ -17,8 +17,35 @@ app.use(
   })
 );
 
+let ideas = [
+  {
+    descript: "Fuck this ",
+    Author: "Sam",
+    Dept: "IT",
+    Goal: "Nutzung nachhaltiger Verkehrsmittel",
+  },
+  {
+    descript: "Fuck this ",
+    Author: "Sam",
+    Dept: "IT",
+    Goal: "Nutzung nachhaltiger Verkehrsmittel",
+  },
+];
+
 app.get("/", (request, response) => {
   response.json({ info: "Node.js, Express, and Postgres API" });
+});
+
+app.get("/ideas", (request, response) => {
+  console.log("touched");
+  response.json(ideas);
+});
+
+app.post("/ideas", (request, response) => {
+  const idea = request.body;
+  console.log(request);
+  console.log(idea);
+  ideas.push(idea);
 });
 
 app.listen(port, () => {
