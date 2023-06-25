@@ -8,13 +8,22 @@ function HomePage() {
     Dept: string,
     Goal: string,
     titel: string}[]>([])
+    
+    const [userIdeaList, setUserIdeaList] = useState<{descript: string,
+        Author: string,
+        Dept: string,
+        Goal: string,
+        titel: string}[]>([])
 
     useEffect(() => {
         const fetchData = async () => {
           try {
             const response = await fetch('http://localhost:3000/ideas');
+            const usrResponse = await fetch('http://localhost:3000/userIdeas')
+            const usrdata = await usrResponse.json();
             const data = await response.json();
             setIdeaList(data);
+            setUserIdeaList(usrdata);
           } catch (error) {
             console.error('Error fetching object list:', error);
           }
@@ -145,30 +154,18 @@ function HomePage() {
       </h5>
       <Table>
         <Table.Body>
-            <Table.Row>
-                <Table.Cell>
-                    Kein Einwegplastik auf Events
-                </Table.Cell>
-                <Table.Cell>
-                    <AiFillEdit/>
-                </Table.Cell>
-                <Table.Cell>
-                    <AiFillDelete/>
-                </Table.Cell>
-            </Table.Row>
-            <Table.Row>
-                <Table.Cell>
-                    Keine Klimaanlage mehr
-                </Table.Cell>
-                <Table.Cell>
-                    <AiFillEdit/>
-                </Table.Cell>
-                <Table.Cell>
-                    <AiFillDelete/>
-                </Table.Cell>
+        {userIdeaList.map( (idea) => (
+               <Table.Row>
+               <Table.Cell>
+                {idea.titel}
+               </Table.Cell>
+               <Table.Cell>
+                   <BiCommentDetail/>
+               </Table.Cell>
+           </Table.Row> 
 
-            </Table.Row>
-
+            ))
+            } 
         </Table.Body>
       </Table>
 <Button color="dark" >Neue Idee</Button>

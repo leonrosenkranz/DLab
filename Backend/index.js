@@ -34,6 +34,22 @@ let ideas = [
   },
 ];
 
+let userIdeas = [
+  {
+    descript: "Fuck this ",
+    Author: "Sam",
+    Dept: "IT",
+    Goal: "Nutzung nachhaltiger Verkehrsmittel",
+    titel: "Keine Klimaanlage mehr",
+  },
+  {
+    descript: "Fuck this ",
+    Author: "Sam",
+    Dept: "IT",
+    Goal: "Nutzung nachhaltiger Verkehrsmittel",
+    titel: " Kein Einwegplastik auf Events ",
+  },
+];
 app.get("/", (request, response) => {
   response.json({ info: "Node.js, Express, and Postgres API" });
 });
@@ -43,11 +59,22 @@ app.get("/ideas", (request, response) => {
   response.json(ideas);
 });
 
+app.get("/userIdeas", (request, response) => {
+  response.json(userIdeas);
+});
+
 app.post("/ideas", (request, response) => {
   const idea = request.body;
   console.log(request);
   console.log(idea);
   ideas.push(idea);
+});
+
+app.post("/userIdeas", (request, response) => {
+  const idea = request.body;
+  console.log(request);
+  console.log(idea);
+  userIdeas.push(idea);
 });
 
 app.listen(port, () => {

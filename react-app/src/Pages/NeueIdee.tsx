@@ -40,6 +40,17 @@ function NeueIdeePage() {
           <div>
             <div className="mb-2 block">
                <Label
+               htmlFor="Titel"
+               value="Idee Titel"/>
+               <TextInput
+               id="Titel"
+               onChange={handleTitelChange}/>
+            </div>
+          </div>
+
+          <div>
+            <div className="mb-2 block">
+               <Label
                htmlFor="Ideegeber"
                value="Ideengeber"/>
                <TextInput
@@ -89,6 +100,11 @@ function NeueIdeePage() {
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(idee)
         })
+        fetch("http://localhost:3000/userIdeas",{
+            method: "POST",
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(idee)
+        })
     }
     
     function handleDescriptChange(e: any){
@@ -120,6 +136,13 @@ function NeueIdeePage() {
             Dept: e.target.value
         })
 
+    }
+
+    function handleTitelChange(e: anz){
+        setIdee({
+            ...idee,
+            titel: e.target.value
+        })
     }
 }
 
