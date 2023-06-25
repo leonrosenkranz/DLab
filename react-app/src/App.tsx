@@ -2,6 +2,7 @@ import Message from './message';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import GoalsPage from './Pages/Goals';
 import HomePage from './Pages/Home';
+import NeueIdeePage from './Pages/NeueIdee'
 import {Sidebar} from 'flowbite-react';
 import { Button } from 'flowbite-react';
 import { FaHome} from "react-icons/fa"
@@ -11,10 +12,9 @@ import { GrScorecard } from "react-icons/Gr"
 import { MdSchool } from "react-icons/md"
 function App() {
   return (
-  
-    <BrowserRouter>
-  <div className=" bg-cover bg-center flex justify-around" style={{backgroundImage: 'url(./src/assets/pexels-vasanth-babu-797797.jpg)'}}>
-      <Sidebar className='p-20'>
+    <BrowserRouter className="h-full">
+  <div className=" bg-cover bg-center flex justify-around h-full" style={{backgroundImage: 'url(./src/assets/pexels-vasanth-babu-797797.jpg)'}}>
+      <Sidebar className='p-20 h-screen'>
       <Sidebar.Items >
       <Sidebar.ItemGroup >
         <Sidebar.Item
@@ -41,9 +41,10 @@ function App() {
       </Sidebar.ItemGroup>
      </Sidebar.Items>
     </Sidebar>
-    <div className='pl-10'>
-    <Routes>
+    <div className='pl-10 h-full'>
+    <Routes className="h-full">
           <Route path="/" element={<Home />} />
+          <Route path="/NeueIdee" element={<NeueIdee/>}/>
           <Route path="/goals" element={<Goals />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/education" element={<Education />} />
@@ -54,12 +55,15 @@ function App() {
 </div>
 
      </BrowserRouter>
-  
   )
 }
 
 function Home() {
   return HomePage();
+}
+
+function NeueIdee() {
+  return NeueIdeePage();
 }
 
 function Goals() {

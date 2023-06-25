@@ -119,7 +119,7 @@ function HomePage() {
           </Card>
    <Card
       className="max-w-sm border-4 bg-opacity-50 hover:bg-red-700"
-      href="#"
+      href="NeueIdee"
     >
       <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
         <p>
@@ -154,7 +154,7 @@ function HomePage() {
 
         </Table.Body>
       </Table>
-<Button color="dark" >Mehr</Button>
+<Button color="dark" >Neue Idee</Button>
 
     </Card>
 
