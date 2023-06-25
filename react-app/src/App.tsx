@@ -10,52 +10,56 @@ import {AiOutlineFundProjectionScreen} from"react-icons/Ai"
 import { GrScorecard } from "react-icons/Gr"
 import { MdSchool } from "react-icons/md"
 function App() {
-  return (<div>
-    <Button>FlowBite</Button>
-    <Sidebar>
-      <Sidebar.Items>
-      <Sidebar.ItemGroup>
+  return (
+  
+    <BrowserRouter>
+  <div className=" bg-cover bg-center flex justify-around" style={{backgroundImage: 'url(./src/assets/pexels-vasanth-babu-797797.jpg)'}}>
+      <Sidebar className='p-20'>
+      <Sidebar.Items >
+      <Sidebar.ItemGroup >
         <Sidebar.Item
         icon={FaHome}>
-          <p>
-            Home
-          </p>
+          <Link to="/">Home</Link>
         </Sidebar.Item>
         <Sidebar.Item
         icon={GiStairsGoal}>
-          <p>
-            Ziele
-          </p>
+          <Link to="/goals">Goals</Link>
         </Sidebar.Item>
         <Sidebar.Item
         icon={AiOutlineFundProjectionScreen}>
-          <p>
-            Projekte
-          </p>
+         <Link to="/projects">Projects</Link>
         </Sidebar.Item>
         <Sidebar.Item
         icon={GrScorecard}>
-          <p>
-            Scoreboard
-          </p>
+         <Link to="/scoreboard">Scoreboard</Link>
         </Sidebar.Item>
         <Sidebar.Item
         icon={MdSchool}
         >
-          <p>
-            Bildung
-          </p>
+          <Link to="/education">Education</Link>
         </Sidebar.Item>
       </Sidebar.ItemGroup>
      </Sidebar.Items>
     </Sidebar>
-    <HomePage></HomePage>
-     </div>
+    <div className='pl-10'>
+    <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/goals" element={<Goals />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/scoreboard" element={<Scoreboard />} />
+          <Route path="/further-information" element={<FurtherInformation />} />
+        </Routes>
+</div>
+</div>
+
+     </BrowserRouter>
+  
   )
 }
 
 function Home() {
-  return <h2>Home</h2>;
+  return HomePage();
 }
 
 function Goals() {
