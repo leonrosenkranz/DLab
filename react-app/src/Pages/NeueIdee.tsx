@@ -1,6 +1,7 @@
 
 import { Card, Button, Checkbox, Label, TextInput, Textarea, Select} from "flowbite-react"
 import { useState } from "react"
+import Helmet from "react-helmet"
 
 let IdeeText = ""
 
@@ -15,7 +16,14 @@ function NeueIdeePage() {
 
 })
     return (  
-             <Card className="bg-opacity-50 hover:bg-red-700 h-full ">
+             <Card className="bg-opacity-50 hover:bg-red-700 min-h-screen ">
+                 <Helmet>
+                <style>{`
+                html, body, #root{
+                    min-height:100vh;
+                    height:100vh
+                }`}</style>
+            </Helmet>
             <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
         <p>
             Neue Idee

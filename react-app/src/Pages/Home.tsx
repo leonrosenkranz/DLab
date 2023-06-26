@@ -1,7 +1,7 @@
 import {Card, Table, Progress, Button, ListGroup, Alert} from "flowbite-react"
 import { useEffect, useState } from "react"
 import {BiCommentDetail} from "react-icons/Bi"
-import { AiFillEdit, AiFillDelete } from "react-icons/ai"
+import Helmet from "react-helmet"
 function HomePage() {
     const [ideaList, setIdeaList] = useState<{descript: string,
     Author: string,
@@ -33,7 +33,13 @@ function HomePage() {
       }, []);
     return (
         <div>
-            <div className="bg-gray-300 bg-opacity-50 rounded-lg text-center p-4 m-4"> Ritto & Fuch x SustainChallenge</div>
+            <Helmet>
+                <style>{`
+                html, body, #root{
+                    min-height:100%
+                }`}</style>
+            </Helmet>
+            <div className="bg-gray-300 bg-opacity-50 rounded-lg text-center p-4 m-4 mt-8"> Ritto & Fuch x SustainChallenge</div>
         <div className="flex flex-col space-y-4 pt-4">
         <div className="flex space-x-4">
              <Card

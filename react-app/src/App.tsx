@@ -12,14 +12,14 @@ import { GrScorecard } from "react-icons/Gr"
 import { MdSchool } from "react-icons/md"
 function App() {
   return (
-    <BrowserRouter className="h-full">
+    <BrowserRouter>
   <div className=" bg-cover bg-center flex justify-around h-full" style={{backgroundImage: 'url(./src/assets/pexels-vasanth-babu-797797.jpg)'}}>
       <Sidebar className='p-20 h-screen'>
       <Sidebar.Items >
       <Sidebar.ItemGroup >
         <Sidebar.Item
         icon={FaHome}>
-          <Link to="/">Home</Link>
+          <Link to="/#">Home</Link>
         </Sidebar.Item>
         <Sidebar.Item
         icon={GiStairsGoal}>
