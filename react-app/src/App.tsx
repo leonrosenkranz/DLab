@@ -13,8 +13,9 @@ import { MdSchool } from "react-icons/md"
 function App() {
   return (
     <BrowserRouter>
-  <div className=" bg-cover bg-center flex gap-10 h-full" style={{backgroundImage: 'url(./src/assets/pexels-vasanth-babu-797797.jpg)'}}>
-      <Sidebar className=' h-screen'>
+  <div className=" bg-cover bg-center flex justify-center   h-full" style={{backgroundImage: 'url(./src/assets/pexels-vasanth-babu-797797.jpg)'}}>
+    <div className='justify-self-start h-screen absolute top-0 left-0'>
+      <Sidebar className='justify-self-start h-screen' collapsed={true}>
       <Sidebar.Items >
       <Sidebar.ItemGroup >
         <Sidebar.Item
@@ -41,7 +42,8 @@ function App() {
       </Sidebar.ItemGroup>
      </Sidebar.Items>
     </Sidebar>
-    <div className=' pl-10 pb-10'>
+</div>
+    <div className='pl-10 pb-10 justify-center'>
     <Routes className="h-full  relative">
           <Route path="/" element={<Home />} />
           <Route path="/NeueIdee" element={<NeueIdee/>}/>
