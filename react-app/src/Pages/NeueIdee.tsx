@@ -16,7 +16,7 @@ function NeueIdeePage() {
 
 })
     return (  
-             <Card className="bg-opacity-50 hover:bg-red-700 min-h-screen ">
+             <Card className="bg-opacity-50 hover:bg-red-700  ml-8  mt-8 justify-self-end ">
                  <Helmet>
                 <style>{`
                 html, body, #root{
