@@ -40,4 +40,15 @@ Coding and Developing with Visual Studio Code
 |8) Push Changes in main                     | > **git rebase main**|
  
 > Alternative: Work with _GitHub Desktop, TotoiseGit or VSCode GitHub Add-In_
-> 
+>
+Commit Messaging:
+
+#INIT - Initialisiert ein Repository oder ein neues Release
+#IMPLEMENT - Implementieren einer neuen Funktion
+#CHANGE - Ändern einer bestehenden Funktion
+#EXTEND - Erweitern einer vorhandenen Funktion
+#BUGFIX - Fehlerkorrektur
+#RELEASE - Fertigstellung eines Artefaktes zur Auslieferung
+#BRANCH - Erzeugen einer Verzweigung
+#MERGE - Zusammenführen einer Verzweigung
+#CLOSE - Schließen eines Entwicklungszweiges
