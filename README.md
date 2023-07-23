@@ -43,9 +43,12 @@ Coding and Developing with Visual Studio Code
 >
 Commit Messaging:
 
->#INIT - Initialisiert ein Repository oder ein neues Release
->#IMPLEMENT - Implementieren einer neuen Funktion
+#INIT - Initialisiert ein Repository oder ein neues Release
+
+#IMPLEMENT - Implementieren einer neuen Funktion
+
 #CHANGE - Ändern einer bestehenden Funktion
+
 #EXTEND - Erweitern einer vorhandenen Funktion
 #BUGFIX - Fehlerkorrektur
 #RELEASE - Fertigstellung eines Artefaktes zur Auslieferung
