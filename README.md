@@ -50,8 +50,13 @@ Commit Messaging:
 #CHANGE - Ändern einer bestehenden Funktion
 
 #EXTEND - Erweitern einer vorhandenen Funktion
+
 #BUGFIX - Fehlerkorrektur
+
 #RELEASE - Fertigstellung eines Artefaktes zur Auslieferung
+
 #BRANCH - Erzeugen einer Verzweigung
+
 #MERGE - Zusammenführen einer Verzweigung
+
 #CLOSE - Schließen eines Entwicklungszweiges
